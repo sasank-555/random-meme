@@ -24,11 +24,11 @@ const Tag = () => {
     setTag(event.target.value);
   }
   return (
-    <div className="w-1/2  bg-blue-500 rounded-md flex flex-col items-center gap-y-5 p-10 h-1/2">
+    <div className="w-1/2  bg-blue-500 rounded-md flex flex-col items-center gap-y-5 p-10 h-full">
       <h1 className="text-3xl underline uppercase font-bold">
         Random {tag} Gif
       </h1>
-      {loading ? <Spinner /> : <img src={gif} widht="450" />}
+      {loading ? <Spinner /> : <img src={gif} widht="450" height="450" />}
       <input
         type="text"
         name=""
